@@ -1,0 +1,25 @@
+Ao carregar a página são abertas 6 requisições "ConsultarTabelaDeReferencia":
+Todas URLS usam nel.cloudflare.com
+1.
+URL: https://veiculos.fipe.org.br/api/veiculos/ConsultarTabelaDeReferencia
+Método: POST
+Response: JSON
+Resquest:
+origin https://veiculos.fipe.org.br
+referer https://veiculos.fipe.org.br/
+user-agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
+x-requested-with XMLHttpRequest
+Cookie _ga=GA1.3.35024648.1789754841; ROUTEID=.13; _gid=GA1.3.916094986.1791141973; _gcl_au=1.3.462354358.1789754841; cf_clearance=EzjTDrA38eQYbWmi02ngJy0.EbiAwDuTuhH7EAn1p0U-1791142304-1.2.1.1-QSWKLnb816CyUJw0vT7v7MffQ5Kwtt4ZriXbbzUnPy1rhbx.Vql8lWxE5JiSTlkHKu4snWd_fnMKYQDzGKNKdn_F7VIxb0GknjApF3VP8o_4ceOXcp5UlqNmdCcuhEpJLp3N.AFOjHu9j3uQZGVM1BjXtjgnBwyVWtN5zfnPKG_Nvs2ZNNsG9mY9Opz342n96c_pQ0vEHs2.jAJ92fudkAJUgyx7A3sCYOhr6BjlDE5KTvIpqye0DvJZKz6hwYZXtmYLp3Hsbi3AkFfDHyjmDmFgy4kdZKMNgNkNpKRthuZtfGYyS0PRst46DR60qQBXdC5_.IZQlQlx_exQ3.Xg.eBiREk3_sLTgF3GJyIEFHU; _ga_WN7SEBCDBR=GS2.3.s1791141973$o2$g1$t1791142471$j60$l0$h0; _gat=1
+
+Response - Limpar o espaço em branco no Mes
+[
+    {
+        "Codigo": 338,
+        "Mes": "outubro/2026 "
+    },
+    {
+        "Codigo": 337,
+        "Mes": "setembro/2026 "
+    },
+Lidando com esse tipo de resposta para carregar as informações, descobri que os códigos do JSON não são sequenciais na estrutura das resposta, para aplicar qualquer filtro ou temporal a data será derivada do campo "Mes", que por sua vez será trata para um formato "DD-MM-AAAA.
+

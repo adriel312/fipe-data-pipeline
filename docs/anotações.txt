@@ -23,3 +23,4 @@ Response - Limpar o espaço em branco no Mes
     },
 Lidando com esse tipo de resposta para carregar as informações, descobri que os códigos do JSON não são sequenciais na estrutura das resposta, para aplicar qualquer filtro ou temporal a data será derivada do campo "Mes", que por sua vez será trata para um formato "DD-MM-AAAA.
 
+Para incluir no README, para executar sempre usar o -m (python -m src.extract), para que a execução seja feita a partir da raiz do projeto.

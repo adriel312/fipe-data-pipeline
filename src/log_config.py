@@ -21,8 +21,7 @@ def configurar_logging():
     handler_arquivo.setLevel(logging.DEBUG)
 
     # 4. Configuração final da biblioteca logging.
-    # O parâmetro force=True garante que a configuração seja aplicada mesmo se algum
-    # código anterior já tenha chamado basicConfig.
+    # O parâmetro force=True garante que a configuração seja aplicada mesmo se algum código anterior já tenha chamado basicConfig.
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",

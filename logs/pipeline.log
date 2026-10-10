@@ -1,3 +1,7 @@
 2026-10-05 20:06:29 - __main__ - INFO - Arquivo bruto salvo em: data\raw\tabelas_referencia_05-10-2026_200629.json
 2026-10-05 20:06:29 - __main__ - INFO - Tabela de referência extraída com 310 registros.
 2026-10-05 20:06:29 - __main__ - INFO - Coleta finalizada. Total de meses recebidos: 310
+2026-10-09 21:44:51 - __main__ - INFO - Arquivo bruto salvo em: data\raw\marcas_338_09-10-2026_214451.json
+2026-10-09 21:44:51 - __main__ - INFO - Marcas extraídas com 108 registros para referência 338.
+2026-10-09 21:44:56 - __main__ - INFO - Arquivo bruto salvo em: data\raw\marcas_337_09-10-2026_214456.json
+2026-10-09 21:44:56 - __main__ - INFO - Marcas extraídas com 107 registros para referência 337.
